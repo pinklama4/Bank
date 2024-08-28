@@ -1,7 +1,12 @@
 import {AppRoutes} from "./routes/AppRoutes.jsx";
-
+import GlobalStyles from './Styles/GlobalStyles.js';
 function App() {
-  return <AppRoutes/>
+  return (
+      <>
+        <GlobalStyles />
+        <AppRoutes />
+      </>
+  )
 }
 
 export default App

@@ -9,15 +9,19 @@ import {Security} from "../pages/Security/Security.jsx";
 import {SignUp} from "../pages/SignUp/SignUp.jsx";
 import {NotFound} from "../pages/NotFound/NotFound.jsx";
 
+import {Layout} from "../components/Layout/Layout.jsx";
+
 export function AppRoutes() {
     return(
        <Routes>
-           <Route path="/" element={<Home/>}/>
-           <Route path="/about" element={<About/>}/>
-           <Route path="/careers" element={<Careers/>}/>
-           <Route path="/login" element={<Login/>}/>
-           <Route path="security" element={<Security/>}/>
-           <Route path="signup" element={<SignUp/>}/>
+           <Route path="/" element={<Layout/>}>
+               <Route index element={<Home/>}/>
+               <Route path="about" element={<About/>}/>
+               <Route path="careers" element={<Careers/>}/>
+               <Route path="login" element={<Login/>}/>
+               <Route path="security" element={<Security/>}/>
+               <Route path="signup" element={<SignUp/>}/>
+           </Route>
            <Route path="*" element={<NotFound/>}/>
        </Routes>
     )
