@@ -1,10 +1,16 @@
+
 import {AppRoutes} from "./routes/AppRoutes.jsx";
-import GlobalStyles from './Styles/GlobalStyles.js';
+import GlobalStyles from './theme/GlobalStyles.js';
+import {Global} from "@emotion/react";
+import globalStyles from "./theme/GlobalStyles.js";
+
+
+
 function App() {
   return (
       <>
-        <GlobalStyles />
-        <AppRoutes />
+          <Global styles={globalStyles} />
+          <AppRoutes />
       </>
   )
 }
