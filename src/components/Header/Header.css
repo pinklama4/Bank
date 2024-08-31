@@ -1,19 +1,5 @@
 
-header {
 
-}
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-
-}
-.header-content__navbar {
-    display: flex;
-    gap: 26px;
-
-}
 a {
     font-weight: 400;
     font-size: 18px;
@@ -23,5 +9,7 @@ a {
 }
 
 .active-link {
-    color: red;
+    border-radius: 82px;
+    padding: 12px 24px;
+    background: var(--grey-15);
 }
