@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {NavbarLink} from "../../components/UI/NavbarLink/NavbarLink.jsx";
+import {Img} from "../../components/UI/Img/index.jsx";
 
 
 export const HeroSection = styled.section`
@@ -25,7 +26,7 @@ export const CreditCheck = styled.div`
   border-radius: 61px;
   background: var(--grey-15);
 `;
-export const SubtractImg = styled.img`
+export const SubtractImg = styled(Img)`
   
 `;
 export const TextSubtract = styled.p`
@@ -83,7 +84,7 @@ export const MainImages = styled.img`
 `;
 
 
-export const AbstractImg = styled.img`
+export const AbstractImg = styled(Img)`
   position: absolute;
   top: 0;
   left: 0;

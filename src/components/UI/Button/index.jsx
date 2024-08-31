@@ -1,8 +1,8 @@
 
-export function Button ({children}) {
+export function Button ({children, className}) {
     return(
         <>
-            <button>
+            <button className={className}>
                 {children}
             </button>
         </>
