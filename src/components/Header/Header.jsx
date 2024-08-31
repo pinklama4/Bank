@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom";
 import './Header.css'
 import logo from '../../assets/image/Logo.png'
 import {HeaderContent, HeaderEntrance, HeaderNavbar, HeaderSection} from "./header.style.js";
-import LayoutWindow from "../../theme/LayoutWindow.js";
+import {LayoutWindow} from "../../theme/LayoutWindow.js";
 
 
 export function Header() {

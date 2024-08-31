@@ -39,6 +39,7 @@ const GlobalStyle = css`
     padding: 0;
     margin: 0;
     border: none;
+    box-sizing: border-box;
   }
 
   *,

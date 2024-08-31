@@ -1,13 +1,11 @@
-import {Link, useMatch} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
-export function NavbarLink (children, to) {
-    const match = useMatch(to)
+export function NavbarLink ({children, to, className}) {
     return(
         <Link
-            to={to}
-            style={{color: match ? "red" : "white",
-        }}
+                to={to}
+                className={className}
         >
             {children}
         </Link>
