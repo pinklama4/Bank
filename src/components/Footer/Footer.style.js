@@ -5,7 +5,7 @@ import {Link} from "../UI/Link/index.jsx";
 
 export const FooterSection = styled.footer`
   background: var(--grey-11);
-  padding: 0 0 20px;
+  padding: 0 10px 20px;
 `;
 export const FooterContent = styled.div`
     padding: 100px 0 0;
@@ -81,6 +81,7 @@ export const LinksFooter = styled.div`
 export const StyledLinksFooter = styled.a`
   padding: 14px;
   border-radius: 100px;
+  text-align: center;
   background: var(--green-60);
 `;
 export const ImagesLinksFooter= styled(Img)`
